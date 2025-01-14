@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 1rem;
+
+  div {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    svg {
+      padding-right: 0.5rem;
+    }
+    a:link {
+      color: rgba(0, 0, 255, 0.707);
+      margin: 1rem;
+      text-decoration: none;
+    }
+    a:visited {
+      color: brown;
+    }
+    a:hover,
+    a:active {
+      color: brown;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.project_container {
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  h5 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  a {
+    margin-left: 0.3rem;
+  }
+
+  .part {
+    margin: 1rem 0;
+    h3 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    h4 {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 1rem;
+    }
+    .project {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .proj {
+        margin: 1rem;
+        width: 100%;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1rem;
+        align-self: stretch;
+        .my-video {
+          align-items: center;
+          width: 90%;
+          video {
+            width: 100%;
+          }
+        }
+        .view {
+          padding: 1rem 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .project_container {
+    .project {
+      flex-direction: column;
+      justify-content: start;
+    }
+  }
+}

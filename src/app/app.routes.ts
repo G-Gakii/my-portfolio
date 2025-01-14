@@ -1,3 +1,35 @@
 import { Routes } from '@angular/router';
+import { MainComponent } from './pages/main/main.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: '',
+    component: MainComponent,
+  },
+  {
+    path: 'contact',
+    loadComponent: () =>
+      import('./pages/contact/contact.component').then(
+        (c) => c.ContactComponent
+      ),
+  },
+  {
+    path: 'portfolio',
+    loadComponent: () =>
+      import('./pages/hero/hero.component').then((c) => c.HeroComponent),
+  },
+  {
+    path: 'project',
+    loadComponent: () =>
+      import('./pages/projects/projects.component').then(
+        (c) => c.ProjectsComponent
+      ),
+  },
+  {
+    path: 'education',
+    loadComponent: () =>
+      import('./pages/education/education.component').then(
+        (c) => c.EducationComponent
+      ),
+  },
+];
