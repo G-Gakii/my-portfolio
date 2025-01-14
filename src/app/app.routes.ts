@@ -13,11 +13,7 @@ export const routes: Routes = [
         (c) => c.ContactComponent
       ),
   },
-  {
-    path: 'portfolio',
-    loadComponent: () =>
-      import('./pages/hero/hero.component').then((c) => c.HeroComponent),
-  },
+
   {
     path: 'project',
     loadComponent: () =>
